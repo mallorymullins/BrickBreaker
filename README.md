@@ -1,3 +1,4 @@
 # Brick Breaker
+<div align="center"><img src="assets/brickbreaker.png"></div>
 
-![Brick View]( <div align="center"><img src="assets/brickbreaker.png"></div> "Phaser 3 Header Banner")
+Brick Breaker is a fun free game, that brings us back to childhood.
