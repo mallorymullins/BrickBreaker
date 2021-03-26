@@ -8,7 +8,9 @@ I decided to make a Brick Breaker because as I was going through a list of examp
 
 
 To start out making the game I first made my header and established the title and the stylesheet.
+
 <div align="center"> <img src="assets/Part1.png"></div>
+
 After that i initiated my canvas along with the radius of the ball that i am going to use and how fast i want the ball to move. 
 
 
