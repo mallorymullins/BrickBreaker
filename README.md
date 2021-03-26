@@ -6,7 +6,7 @@ This is a free and fun interactive game that takes you back to your childhood. S
 
 I decided to make a Brick Breaker because as I was going through a list of examples it really popped out at me. All of the other ones seemed to have a boring outcome to me, however breaking things always seems fun to me.
 
-
+## Step 1
 To start out making the game I first made my header and established the title and the stylesheet.
 
 <div align="center"> <img src="assets/Part1.PNG"></div>
