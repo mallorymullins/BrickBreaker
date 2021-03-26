@@ -6,7 +6,7 @@ This is a free and fun interactive game that takes you back to your childhood. S
 
 I decided to make a Brick Breaker because as I was going through a list of examples it really popped out at me. All of the other ones seemed to have a boring outcome to me, however breaking things always seems fun to me.
 
-## Step 1
+## Title
 To start out making the game I first made my header and established the title and the stylesheet.
 
 <div align="center"> <img src="assets/Part1.PNG"></div>
@@ -15,6 +15,8 @@ After that i initiated my canvas along with the radius of the ball that i am goi
 
 
 <div align="center"> <img src="assets/Part2.PNG"></div>
+
+## Painting the Ball
 After i declaired the radius of the ball i then had to declare the path of the ball as well as the math of how the ball moved, the color of the ball, paint the ball that color and then to end the path that the ball went. 
 
 Then we must actually draw the ball by calling the drawball() into the draw(). And since we do not want there to be a trail behind the ball we need to clearRect() to clear the canvas.
@@ -26,23 +28,27 @@ We are also going to call requestAnimationFrame(draw) in order to call the draw 
 We also need to update the X, Y, Xd,yd variables so the ball will be painted in its new position. 
 <div align="center"> <img src="assets/Part0.PNG"></div>
 
+## Initialize the Paddle
 Next i added the paddle that the ball would eventually bounce off of. 
 You need to initialize the paddle height, width,and placement
 <div align="center"> <img src="assets/Part5.PNG"></div>
 The placement math is done byy subtracting the paddles with from the canvas and dividing by 2. Similarly how you would ang a picture on the center of the wall. It tells you how far in from the edge the first edge should be.  
 
+## Make the Paddle
 We then need to Draw the Paddle.
 <div align="center"> <img src="assets/Part6.PNG"></div>
 In this function we get the beginning path establish, the starting point, the color, fill in the shape of the color we have chosen and the closepath().
 
 Then add the drawPaddle() to draw().
 
-We need to establish are colision course now that we have the paddle. We need the ball to bounce off the walls in order to even think about using the paddle. 
+## Build the walls
+We need to establish are collision course now that we have the paddle. We need the ball to bounce off the walls in order to even think about using the paddle. 
 First we need to make sure the program recognizes when the outside of the ball hits the wall not the center of the ball. 
 <div align="center"> <img src="assets/Part7.PNG"></div>
 For the step above it is only demonstrated for the right and top wall, you have to repeat for the bottom wall and the left wall. 
 The bottom wall will be edited later which is why I did not include it here. 
 
+## Which ever Which way
 Our Next step is to etablish the moving of the paddle especially if you want to hit the ball. 
 Here we set them as false since nothing has been touched yet. 
 <div align="center"> <img src="assets/Part8.PNG"></div>
@@ -54,13 +60,14 @@ The keyDownHandler() detects if either the right arrow key or the left arrow key
 The keyUpHandler() detects once the button has been released and sets the corresponding variable back to false so the paddle will not continue to sliding all over the bottom of the screen. 
 <div align="center"> <img src="assets/Part9.PNG"></div>
 
-
+## Paddle Moves
 Now we implement the paddle moving in the Draw()
 
 With the following code in the draw method it repaints the paddle moveing as you press the arrows either left or right. All the wile maintaining the paddle on the canvas and with in the boarder. 
 
 <div align="center"> <img src="assets/Part10.PNG"></div>
 
+## Build Them Bricks
 Next Is to Install the Bricks on the canvas, the fun part. You first have to declair the row, colums, width, height, padding, and offset of the bricks. 
 
 <div align="center"> <img src="assets/Part11.PNG"></div>
@@ -77,8 +84,9 @@ Now that we have established the order and placement of the bricks we need to dr
 
 The code above draws the bricks in the canvas.  It also sees if the status is equal to one. If the status is equal to one then the brick will be drawn however once the ball hits the brick it will see if the  the brick to 0 and the brick will no longer be painted. The status does not get reset until the game restarts. 
 
-We must not implement drawBricks() into Draw().
+We must now implement drawBricks() into Draw().
 
+## Collisions
 Now that the bricks are drawn we need to colid into them. 
 
 <div align="center"> <img src="assets/Part14.PNG"></div>
@@ -87,6 +95,7 @@ In the code above we will change the direction of the ball of the if the coordin
 
 You must then include collisionDetection() in the Draw().
 
+## Keeping Score
 Displaying the score.
 
 <div align="center"> <img src="assets/Part15.PNG"></div>
@@ -94,6 +103,7 @@ Displaying the score.
 We want to displat the score, so we must include font, the coloring, and where we would like it to be placed.
 Then we must include the drawScore() in the draw().
 
+## Death Awaits
 Now that we have a scoring system set up, i took away the collision for the bottom wall and gave a penalty for if you missed the ball with the paddle. 
 
 <div align="center"> <img src="assets/Part16.PNG"></div>
@@ -102,32 +112,15 @@ This picture above has some code that we did earlier, i am now showing you the r
 
 The code above also shows that if there are lives left then the paddle resets to its original postioning. This is displayed in draw().
 
+## Draw Lives
 Last but not least the we have to implement the drawLives() so we can display how many lives we have left. 
 
 <div align="center"> <img src="assets/Part17.PNG"></div>
 
 This is similar to how we implemented the drawScore() however we are placing it on the oposite side of the canvas. 
 
+## Make it Spicy
 Now to spice it up a little i added buttons to Easy, Medium, and Hard levels. Where the only diffence in code is the speed in which the ball moves. 
 
 <div align="center"> <img src="assets/Part18.PNG"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
 
