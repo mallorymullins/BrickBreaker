@@ -59,7 +59,7 @@ Now we implement the paddle moving in the Draw()
 
 With the following code in the draw method it repaints the paddle moveing as you press the arrows either left or right. All the wile maintaining the paddle on the canvas and with in the boarder. 
 
-<div align="center"> <img src="assets/Part10.png"></div>
+<div align="center"> <img src="assets/Part10.PNG"></div>
 
 Next Is to Install the Bricks on the canvas, the fun part. You first have to declair the row, colums, width, height, padding, and offset of the bricks. 
 
