@@ -1,0 +1,32 @@
+body {
+	background-image: url("../assets/bg-image1.png") ; 
+  	background-size: cover;
+		
+	background-color: #6d2eff;
+
+}
+button:hover { background-color: #ffdb3a; }
+
+#id-selector{
+	text-align: center;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.text-white{
+	color: white;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-left {
+  justify-content: left;
+}
+.jc-right {
+  justify-content: right;
+}
+
+
