@@ -1,4 +1,7 @@
 body {
+	background-image: url("../assets/bg-image1.png") ; 
+  	background-size: cover;
+		
 	background-color: #6d2eff;
 
 }
